@@ -26,11 +26,12 @@ $ make
 $ make install
 ```
 
-* set the VM arguments to `-Djava.library.path=/usr/local/lib'
+* set the VM arguments to `-Djava.library.path=/usr/local/lib`
 
 ## Usage
 
-Just run the jUnit test. Very elaborate, I know.
+* run the Server
+* run the the jUnit test. Very elaborate, I know.
 
 **Note**: the built `zmq.jar` is already referenced in the lib.
 
