@@ -8,7 +8,7 @@ import freelance.Client;
 
 public class FreelanceCase {
 
-	private static final int NUM_OF_REQUESTS = 10000;
+	private static final int NUM_OF_REQUESTS = 5000;
 	
 	@Test
 	public void test() {

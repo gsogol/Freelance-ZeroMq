@@ -12,12 +12,12 @@ public class Server
 {
     public static void main(String[] args)
     {
-        boolean verbose = (args.length > 0 && args[0].equals("-v"));
+        boolean verbose = (args.length > 1 && args[1].equals("-v"));
 
         ZContext ctx = new ZContext();
         //  Prepare server socket with predictable identity
-        String bindEndpoint = "tcp://*:5555";
-        String connectEndpoint = "tcp://localhost:5555";
+        String bindEndpoint = "tcp://*:" + args[0];
+        String connectEndpoint = "tcp://localhost:" + args[0];
         Socket server = ctx.createSocket(ZMQ.ROUTER);
         server.setIdentity(connectEndpoint.getBytes());
         server.bind(bindEndpoint);

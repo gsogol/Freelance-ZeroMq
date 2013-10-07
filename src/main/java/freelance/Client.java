@@ -33,7 +33,7 @@ public class Client
 
     //  Structure of our frontend class
     private ZContext ctx;        //  Our context wrapper
-    private Socket pipe;         //  Pipe through to flcliapi agent
+    private Socket pipe;         //  Pipe through to Client agent
 
     public Client()
     {
